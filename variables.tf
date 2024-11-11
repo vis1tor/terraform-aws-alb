@@ -35,15 +35,15 @@ variable "alb_info" {
       load_balancing_cross_zone_enabled = string
       load_balancing_algorithm_type     = string
       health_check = object({
-        enabled : string
-        healthy_threshold : string
-        interval : string
-        matcher : string
-        path : string
-        port : string
-        protocol : string
-        timeout : string
-        unhealthy_threshold : string
+        enabled             = string
+        healthy_threshold   = string
+        interval            = string
+        matcher             = string
+        path                = string
+        port                = string
+        protocol            = string
+        timeout             = string
+        unhealthy_threshold = string
       })
     }))
   }))
